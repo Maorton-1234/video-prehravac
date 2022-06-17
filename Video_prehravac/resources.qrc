@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>resources/pause-2.png</file>
+        <file>resources/play-2.png</file>
+        <file>resources/Rewind-2.png</file>
+        <file>resources/Stop-2.png</file>
+        <file>resources/VyberVidea-2.png</file>
+        <file>resources/Sound-off-icon.png</file>
+        <file>resources/Sound-on-icon.png</file>
+        <file>resources/dinosaur.png</file>
+        <file>resources/fullscreen.png</file>
+    </qresource>
+    <qresource prefix="/videos"/>
+</RCC>

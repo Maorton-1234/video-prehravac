@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>992</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(24, 25, 29, 255),stop:1 rgba(42, 44, 51, 255));
+	color: #000000;
+	border-color: #000000;
+
+}
+
+
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: transparent;
+	color: #ffffff;
+
+}
+
+
+QLabel::disabled
+{
+	background-color: transparent;
+	color: gray;
+
+}
+
+
+/*-----QMenuBar-----*/
+QMenuBar
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(42, 44, 51, 255), stop:1 rgba(24, 25, 29, 255));
+	color: #eee;
+	border-color: #000000;
+
+}
+
+
+QMenuBar::item
+{
+    background-color: transparent;
+	
+}
+
+
+QMenuBar::item:disabled
+{
+    background-color: transparent;
+	color: gray;
+
+}
+
+
+QMenuBar::item:selected
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(171, 129, 102, 255),stop:1 rgba(140, 107, 85, 255));
+
+}
+
+
+QMenuBar::item:pressed
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(121, 79, 52, 255),stop:1 rgba(90, 57, 35, 255));
+    border: 1px solid #794f34;
+    margin-bottom: -1px;
+    padding-bottom: 1px;
+
+}
+
+
+/*-----QMenu-----*/
+QMenu
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(24, 25, 29, 255),stop:1 rgba(42, 44, 51, 255));
+    border: 1px solid;
+    color: #eee;
+
+}
+
+
+QMenu::separator
+{
+    height: 1px;
+    background-color: #000;
+    color: #ffffff;
+    padding-left: 4px;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+
+
+QMenu::item
+{
+    min-width : 150px;
+    padding: 3px 20px 3px 20px;
+
+}
+
+
+QMenu::item:selected
+{
+    background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(121, 79, 52, 255),stop:1 rgba(90, 57, 35, 255));
+    color: #ffffff;
+
+}
+
+
+QMenu::item:disabled
+{
+    color: #262626;
+
+}
+
+
+
+/*-----QPushButton-----*/
+QPushButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(151, 109, 82, 255),stop:1 rgba(120, 87, 65, 255));
+	color: #000000;
+	border-color: #000000;
+	border-radius: 3px;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(171, 129, 102, 255),stop:1 rgba(140, 107, 85, 255));
+	color: #000000;
+	border-color: #000000;
+	border-radius: 3px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(121, 79, 52, 255),stop:1 rgba(90, 57, 35, 255));
+	color: #000000;
+	border-color: #000000;
+	border-radius: 3px;
+
+}
+
+
+QPushButton::checked
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(121, 79, 52, 255),stop:1 rgba(90, 57, 35, 255));
+	color: #000000;
+	border-color: #000000;
+	border-radius: 3px;
+
+}
+
+
+/*-----QSlider-----*/
+QSlider{
+	background-color: transparent;
+
+}
+
+
+QSlider::groove:horizontal 
+{
+	background-color: transparent;
+	height: 3px;
+
+}
+
+
+QSlider::sub-page:horizontal 
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(121, 79, 52, 255),stop:1 rgba(90, 57, 35, 255));
+
+}
+
+
+QSlider::add-page:horizontal 
+{
+	background-color: #666765;
+
+}
+
+
+QSlider::handle:horizontal 
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(151, 109, 82, 255),stop:1 rgba(120, 87, 65, 255));
+	width: 14px;
+	margin: -5px;
+	border-radius: 6px;
+
+}
+
+
+QSlider::handle:horizontal:hover 
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(121, 79, 52, 255),stop:1 rgba(90, 57, 35, 255));
+
+}
+
+
+QSlider::sub-page:horizontal:disabled 
+{
+	background-color: #bbb;
+	border-color: #999;
+
+}
+
+
+QSlider::add-page:horizontal:disabled 
+{
+	background-color: #eee;
+	border-color: #999;
+
+}
+
+
+QSlider::handle:horizontal:disabled 
+{
+	background-color: #eee;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+
+}
+
+
+/*-----QStatusBar-----*/
+QStatusBar
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(42, 44, 51, 255), stop:1 rgba(24, 25, 29, 255));
+	color: #eee;
+	border-color: #000000;
+
+}
+
+QToolBar {
+ 
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>190</y>
+      <width>321</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Na Spustenie videa choďte do Menu -&gt; </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actionVyber_videa_2">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>210</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> Výber Videa</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/images/resources/VyberVidea-2.png</normaloff>:/images/resources/VyberVidea-2.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>240</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Alebo si pozrite </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>240</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pomocník</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>992</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionVyber_videa"/>
+    <addaction name="actionPlay"/>
+    <addaction name="actionPause"/>
+    <addaction name="actionStop"/>
+   </widget>
+   <widget class="QMenu" name="menuIn">
+    <property name="title">
+     <string> Video rýchlosť</string>
+    </property>
+    <addaction name="actionSlowMotion"/>
+    <addaction name="actionNormalMotion"/>
+    <addaction name="actionFastMotion"/>
+   </widget>
+   <widget class="QMenu" name="menuIn_2">
+    <property name="title">
+     <string>Iné...</string>
+    </property>
+    <addaction name="actionPomocn_k"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuIn"/>
+   <addaction name="menuIn_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPlay"/>
+   <addaction name="actionPause"/>
+   <addaction name="actionStop"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_4">
+   <property name="windowTitle">
+    <string>toolBar_4</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSlowMotion"/>
+   <addaction name="separator"/>
+   <addaction name="actionNormalMotion"/>
+   <addaction name="separator"/>
+   <addaction name="actionFastMotion"/>
+   <addaction name="separator"/>
+   <addaction name="actionMute"/>
+   <addaction name="actionfullscreen"/>
+  </widget>
+  <action name="actionPlay">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/resources/play-2.png</normaloff>:/images/resources/play-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/resources/pause-2.png</normaloff>:/images/resources/pause-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+  <action name="actionVyber_videa">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/resources/VyberVidea-2.png</normaloff>:/images/resources/VyberVidea-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Vyber videa</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/resources/Stop-2.png</normaloff>:/images/resources/Stop-2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionSlowMotion">
+   <property name="text">
+    <string>0,5</string>
+   </property>
+   <property name="toolTip">
+    <string>Slow Motion</string>
+   </property>
+  </action>
+  <action name="actionNormalMotion">
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="toolTip">
+    <string>Normal Motion</string>
+   </property>
+  </action>
+  <action name="actionFastMotion">
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="toolTip">
+    <string>Fast Motion</string>
+   </property>
+  </action>
+  <action name="actionMute">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/resources/Sound-off-icon.png</normaloff>:/images/resources/Sound-off-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mute</string>
+   </property>
+  </action>
+  <action name="actionvolumeup">
+   <property name="text">
+    <string>volumeup</string>
+   </property>
+   <property name="shortcut">
+    <string>Up</string>
+   </property>
+  </action>
+  <action name="actionvolumedown">
+   <property name="text">
+    <string>volumedown</string>
+   </property>
+   <property name="shortcut">
+    <string>Down</string>
+   </property>
+  </action>
+  <action name="actionfullscreen">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/resources/fullscreen.png</normaloff>:/images/resources/fullscreen.png</iconset>
+   </property>
+   <property name="text">
+    <string>fullscreen</string>
+   </property>
+   <property name="shortcut">
+    <string>F11, Esc</string>
+   </property>
+  </action>
+  <action name="actionPomocn_k">
+   <property name="text">
+    <string>Pomocník</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionMute</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>actionSlowMotion</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
